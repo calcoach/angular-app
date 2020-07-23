@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-app';
+  title = 'Estadisticas';
+
+  lenguajes : any = [
+    {nombre: "Python"},
+    {nombre: "Java"},
+    {nombre: "Javascript"},
+    {nombre: "C++"},
+  ];
+
+  constructor(){
+
+  }
+
 }
