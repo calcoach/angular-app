@@ -1,9 +1,10 @@
 <h1>{{title}}</h1>
-
-
 <h1>Lenguajes de Programacion</h1>
+
 <ul>
-<li *ngFor="let lenguaje of lenguajes">{{lenguaje.nombre}}
+  <ng-container *ngFor="let lenguaje of lenguajes">
+   <li [ngStyle] = "{color: (lenguaje.active) ? 'black' : red}" [ngClass] = "'numeropar'">{{lenguaje.nombre}} </li>
+   </ng-container>
 </ul>
 
 <router-outlet></router-outlet>
